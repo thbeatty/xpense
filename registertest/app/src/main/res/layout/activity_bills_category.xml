@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FAF2E1"
+    tools:context=".BillsCategoryActivity">
+
+    <ListView
+        android:id="@+id/listViewBills"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="165dp"
+        android:layout_marginBottom="57dp" />
+
+    <SearchView
+        android:id="@+id/homeSearch"
+        android:layout_width="341dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="107dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="107dp"
+        android:gravity="center_horizontal" />
+
+    <ProgressBar
+        android:id="@+id/progressBarBills"
+        style="@style/MyProgressBar"
+        android:layout_width="329dp"
+        android:layout_height="35dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="26dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="43dp"
+        android:layout_marginEnd="26dp"
+        android:indeterminate="false"
+        android:scaleY="6" />
+
+    <TextView
+        android:id="@+id/budgetBills"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/progressBarBills"
+        android:layout_alignLeft="@+id/progressBarBills"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="15dp"
+        android:text="Bills"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/billsAmtLeft"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/progressBarMonth"
+        android:layout_alignRight="@+id/progressBarMonth"
+        android:layout_alignBottom="@+id/budgetBills"
+        android:layout_marginEnd="-1dp"
+        android:layout_marginRight="-1dp"
+        android:layout_marginBottom="0dp"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/billsCurrentTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="26dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginRight="333dp"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/billsBudgetAmt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="82dp"
+        android:layout_marginLeft="82dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginRight="293dp"
+        android:textSize="14sp" />
+
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="bottom"
+        android:background="@color/colorPrimaryDark"
+        app:itemIconTint="@drawable/nav_new_colors"
+        app:itemTextColor="@drawable/nav_new_colors"
+        app:menu="@menu/nav_bar_main" />
+
+
+</RelativeLayout>

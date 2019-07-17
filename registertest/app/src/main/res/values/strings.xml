@@ -1,0 +1,37 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Xpense</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="title_activity_registration">Registration</string>
+    <string name="last_name">Last Name</string>
+    <string name="title_activity_scrolling">ScrollingActivity</string>
+    <string name="select_date"><u>Select Date</u></string>
+
+    <string-array name="questions">
+        <item>"[Select Security Question]"</item>
+        <item>"What is the maiden name of your mother?"</item>
+        <item>"What is the middle name of your oldest sibling?"</item>
+        <item>"What is the name of the street you grew up on?"</item>
+        <item>"What was the model of your first car?"</item>
+        <item>"What is the name of your elementary school?"</item>
+        <item>"What was your first job?"</item>
+    </string-array>
+
+    <string-array name="categories">
+        <item>"[Select Category]"</item>
+        <item>"Grocery"</item>
+        <item>"Entertainment"</item>
+        <item>"Miscellaneous"</item>
+        <item>"Personal"</item>
+        <item>"Bills"</item>
+    </string-array>
+</resources>

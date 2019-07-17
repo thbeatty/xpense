@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAF2E1"
+    android:orientation="vertical"
+    tools:context=".AddActivity">
+
+
+    <Button
+        android:id="@+id/manualEntryButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="93dp"
+        android:background="@color/colorPrimary"
+        android:drawableStart="@drawable/manual_entry"
+        android:drawableLeft="@drawable/manual_entry"
+        android:drawablePadding="-35dp"
+        android:fontFamily="@font/capstone"
+        android:text="Manual Entry"
+        android:textAllCaps="false"
+        android:textColor="@color/colorBackground"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/importButton" />
+
+    <Button
+        android:id="@+id/scanButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginBottom="35dp"
+        android:background="@color/colorPrimary"
+        android:drawableStart="@drawable/scan_entry"
+        android:drawablePadding="-35dp"
+        android:fontFamily="@font/capstone"
+        android:text="Scan Receipt"
+        android:textAllCaps="false"
+        android:textColor="@color/colorBackground"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/importButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/importButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="29dp"
+        android:background="@color/colorPrimary"
+        android:drawableStart="@drawable/import_entry"
+        android:drawableLeft="@drawable/import_entry"
+        android:drawablePadding="-35dp"
+        android:fontFamily="@font/capstone"
+        android:text="Import Receipt"
+        android:textAllCaps="false"
+        android:textColor="@color/colorBackground"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/manualEntryButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scanButton" />
+
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="576dp"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="bottom"
+        app:itemIconTint="@drawable/nav_new_colors"
+        app:itemTextColor="@drawable/nav_new_colors"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:menu="@menu/nav_bar_main" />
+
+
+</android.support.constraint.ConstraintLayout>
+

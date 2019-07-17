@@ -1,0 +1,588 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FAF2E1"
+    tools:context=".BudgetActivity">
+
+
+
+    <TextView
+        android:id="@+id/monthCurrentTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="72dp"
+        android:text="$0.00"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/monthBudgetAmt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="301dp"
+        android:layout_marginLeft="301dp"
+        android:layout_marginTop="71dp"
+        android:text="$0.00"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/billsCurrentTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="26dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="166dp"
+        android:layout_marginRight="333dp"
+        android:text="$0.00"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/billsBudgetAmt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="301dp"
+        android:layout_marginLeft="301dp"
+        android:layout_marginTop="166dp"
+        android:text="$0.00"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/entertainmentCurrentTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="26dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="271dp"
+        android:layout_marginRight="333dp"
+        android:text="$0.00"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/entertainmentBudgetAmt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="301dp"
+        android:layout_marginLeft="301dp"
+        android:layout_marginTop="271dp"
+        android:text="$0.00"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/groceriesCurrentTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="26dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="375dp"
+        android:layout_marginRight="333dp"
+        android:text="$0.00"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/groceriesBudgetAmt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="301dp"
+        android:layout_marginLeft="301dp"
+        android:layout_marginTop="375dp"
+        android:text="$0.00"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/personalCurrentTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="26dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="575dp"
+        android:layout_marginRight="333dp"
+        android:text="$0.00"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/personalBudgetAmt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="301dp"
+        android:layout_marginLeft="301dp"
+        android:layout_marginTop="575dp"
+        android:text="$0.00"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/budgetPersonal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/progressBarMonth"
+        android:layout_alignLeft="@+id/progressBarMonth"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="516dp"
+        android:gravity="center"
+        android:text="Personal"
+        android:textSize="18sp" />
+
+    <ProgressBar
+        android:id="@+id/progressBarPersonal"
+        style="@style/MyProgressBar"
+        android:layout_width="329dp"
+        android:layout_height="35dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="26dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="543dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="56dp"
+        android:indeterminate="false"
+        android:scaleY="6" />
+
+    <TextView
+        android:id="@+id/personalAmtLeft"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="290dp"
+        android:layout_marginLeft="290dp"
+        android:layout_marginTop="520dp"
+        android:textSize="14sp"
+        android:text="$0.00 Left" />
+
+    <TextView
+        android:id="@+id/budgetMisc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/progressBarMonth"
+        android:layout_alignLeft="@+id/progressBarMonth"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="418dp"
+        android:text="Miscellaneous"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/miscAmtLeft"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="290dp"
+        android:layout_marginLeft="290dp"
+        android:layout_marginTop="423dp"
+        android:textSize="14sp"
+        android:text="$0.00 Left" />
+
+    <ProgressBar
+        android:id="@+id/progressBarMisc"
+        style="@style/MyProgressBar"
+        android:layout_width="329dp"
+        android:layout_height="35dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="26dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="443dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="56dp"
+        android:indeterminate="false"
+        android:scaleY="6" />
+
+    <TextView
+        android:id="@+id/miscCurrentTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="26dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="478dp"
+        android:layout_marginRight="333dp"
+        android:text="$0.00"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/miscBudgetAmt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="301dp"
+        android:layout_marginLeft="301dp"
+        android:layout_marginTop="478dp"
+        android:text="$0.00"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/budgetGroceries"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/progressBarMonth"
+        android:layout_alignLeft="@+id/progressBarMonth"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="314dp"
+        android:text="Groceries"
+        android:textSize="18sp" />
+
+    <ProgressBar
+        android:id="@+id/progressBarGroceries"
+        style="@style/MyProgressBar"
+        android:layout_width="329dp"
+        android:layout_height="35dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="26dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="339dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:indeterminate="false"
+        android:scaleY="6" />
+
+    <TextView
+        android:id="@+id/budgetEntertainment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/progressBarMonth"
+        android:layout_alignLeft="@+id/progressBarMonth"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="210dp"
+        android:text="Entertainment"
+        android:textSize="18sp" />
+
+    <ProgressBar
+        android:id="@+id/progressBarEntertainment"
+        style="@style/MyProgressBar"
+        android:layout_width="329dp"
+        android:layout_height="35dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="26dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="235dp"
+        android:layout_marginEnd="26dp"
+        android:indeterminate="false"
+        android:scaleY="6" />
+
+    <TextView
+        android:id="@+id/entertainmentAmtLeft"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="290dp"
+        android:layout_marginLeft="290dp"
+        android:layout_marginTop="215dp"
+        android:textSize="14sp"
+        android:text="$0.00 Left" />
+
+    <TextView
+        android:id="@+id/groceriesAmtLeft"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="290dp"
+        android:layout_marginLeft="290dp"
+        android:layout_marginTop="320dp"
+        android:textSize="14sp"
+        android:text="$0.00 Left" />
+
+
+    <TextView
+        android:id="@+id/budgetBills"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/progressBarMonth"
+        android:layout_alignLeft="@+id/progressBarMonth"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="109dp"
+        android:text="Bills"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/billsAmtLeft"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="290dp"
+        android:layout_marginLeft="290dp"
+        android:layout_marginTop="113dp"
+        android:text="$0.00 Left"
+        android:textSize="14sp" />
+
+    <ProgressBar
+        android:id="@+id/progressBarBills"
+        style="@style/MyProgressBar"
+        android:layout_width="329dp"
+        android:layout_height="35dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="26dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="134dp"
+        android:layout_marginEnd="26dp"
+        android:indeterminate="false"
+        android:scaleY="6" />
+
+
+    <ProgressBar
+        android:id="@+id/progressBarMonth"
+        style="@style/MyProgressBar"
+        android:layout_width="329dp"
+        android:layout_height="35dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="26dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="43dp"
+        android:layout_marginEnd="26dp"
+        android:indeterminate="false"
+        android:progress="2"
+        android:scaleY="6" />
+
+    <TextView
+        android:id="@+id/budgetMonth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/progressBarMonth"
+        android:layout_alignLeft="@+id/progressBarMonth"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="15dp"
+        android:text="April 2019"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/monthAmtLeft"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="290dp"
+        android:layout_marginLeft="290dp"
+        android:layout_marginTop="20dp"
+        android:text="$0.00 Left"
+        android:textSize="14sp" />
+
+
+        <android.support.design.widget.BottomNavigationView
+            android:id="@+id/navBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorPrimaryDark"
+            android:gravity="bottom"
+            app:itemIconTint="@drawable/nav_new_colors"
+            app:itemTextColor="@drawable/nav_new_colors"
+            app:menu="@menu/nav_bar_main" />
+
+    <Button
+        android:id="@+id/monthlyCategory"
+        android:layout_width="329dp"
+        android:layout_height="38dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="26dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="26dp"
+        android:background="@android:color/transparent" />
+
+    <Button
+        android:id="@+id/billsCategory"
+        android:layout_width="329dp"
+        android:layout_height="38dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="26dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="134dp"
+        android:layout_marginEnd="26dp"
+        android:background="@android:color/transparent" />
+
+    <Button
+        android:id="@+id/entertainmentCategory"
+        android:layout_width="329dp"
+        android:layout_height="38dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="26dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="235dp"
+        android:layout_marginEnd="26dp"
+        android:background="@android:color/transparent" />
+
+    <Button
+        android:id="@+id/groceriesCategory"
+        android:layout_width="329dp"
+        android:layout_height="38dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="26dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="339dp"
+        android:layout_marginEnd="26dp"
+        android:background="@android:color/transparent"/>
+
+    <Button
+        android:id="@+id/miscCategory"
+        android:layout_width="329dp"
+        android:layout_height="38dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="26dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="443dp"
+        android:layout_marginEnd="26dp"
+        android:background="@android:color/transparent" />
+
+    <Button
+        android:id="@+id/personalCategory"
+        android:layout_width="329dp"
+        android:layout_height="38dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="26dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="543dp"
+        android:layout_marginEnd="26dp"
+        android:background="@android:color/transparent" />
+
+    <Button
+        android:id="@+id/monthlyEditButton"
+        android:layout_width="21dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="333dp"
+        android:layout_marginTop="71dp"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@drawable/ic_edit_pencil" />
+
+    <Button
+        android:id="@+id/billsAmountEditButton"
+        android:layout_width="21dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="333dp"
+        android:layout_marginLeft="333dp"
+        android:layout_marginTop="166dp"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@drawable/ic_edit_pencil" />
+
+    <Button
+        android:id="@+id/entertainmentAmountEditButton"
+        android:layout_width="21dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="333dp"
+        android:layout_marginTop="271dp"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@drawable/ic_edit_pencil" />
+
+    <Button
+        android:id="@+id/groceriesAmountEditButton"
+        android:layout_width="21dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="333dp"
+        android:layout_marginTop="375dp"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@drawable/ic_edit_pencil" />
+
+    <Button
+        android:id="@+id/miscAmountEditButton"
+        android:layout_width="21dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="333dp"
+        android:layout_marginTop="478dp"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@drawable/ic_edit_pencil" />
+
+    <Button
+        android:id="@+id/personalAmountEditButton"
+        android:layout_width="21dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="333dp"
+        android:layout_marginTop="575dp"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@drawable/ic_edit_pencil" />
+
+    <TextView
+        android:id="@+id/previous"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/progressBarMonth"
+        android:layout_alignLeft="@+id/progressBarMonth"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="609dp"
+        android:gravity="center"
+        android:text="March 2019"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/previousMonth"
+        android:layout_width="105dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="26dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="604dp"
+        android:layout_marginEnd="26dp"
+        android:background="@android:color/transparent" />
+    </RelativeLayout>
+
+
+
+
+

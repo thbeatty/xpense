@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="Capstone" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:fontFamily">@font/capstone</item>
+    </style>
+
+    <!-- dark theme
+    <style name="AppTheme.Dark" parent="Theme.AppCompat">
+        <item name="colorPrimary">@color/darkColorPrimary</item>
+        <item name="colorPrimaryDark">@color/darkColorPrimaryDark</item>
+        <item name="colorAccent">@color/darkColorAccent</item>
+        <item name="android:fontFamily">@font/capstone</item>
+        <item name="android:background">@color/darkColorBackground</item>
+        <item name="android:navigationBarColor">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="AppTheme.Dark.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.Dark.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="AppTheme.Dark.PopupOverlay" parent="ThemeOverlay.AppCompat" />
+     dark theme -->
+
+    <style name = "MyProgressBar"
+        parent = '@style/Widget.AppCompat.ProgressBar.Horizontal'>
+        <item name = 'android:colorControlNormal'>#FFFFFF</item>
+        <item name = 'android:colorControlActivated'>#ffff5938</item>
+        <item name = 'android:minWidth'>200dp</item>
+        <item name = 'android:minHeight'>60dp</item>
+        <item name = 'android:maxHeight'>60dp</item>
+    </style>
+
+    <style name="spinnerItemStyle"
+        parent= "@android:style/Widget.Material.DropDownItem.Spinner">
+        <item name="android:background">@color/colorBackground</item>
+
+    </style>
+
+
+
+
+
+
+
+
+
+
+
+
+</resources>

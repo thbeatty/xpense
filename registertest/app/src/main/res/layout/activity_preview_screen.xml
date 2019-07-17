@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAF2E1"
+    tools:context=".PreviewScreenActivity">
+
+    <TextView
+        android:id="@+id/budgetCategoryTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="320dp"
+        android:layout_marginRight="333dp"
+        android:text="Budget Category"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/notesTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="410dp"
+        android:layout_marginRight="333dp"
+        android:text="Notes"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/priceView"
+        android:layout_width="45dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="230dp"
+        android:text="Price"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/dateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="145dp"
+        android:textSize="16sp" />
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="576dp"
+        android:background="@color/colorPrimaryDark"
+        app:itemIconTint="@drawable/nav_new_colors"
+        app:itemTextColor="@drawable/nav_new_colors"
+        app:menu="@menu/nav_bar_main" />
+
+    <TextView
+        android:id="@+id/previewScreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="Preview Screen"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/storeNameEntry"
+        android:layout_width="180dp"
+        android:layout_height="43dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="95dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="16sp" />
+
+
+    <Spinner
+        android:id="@+id/categoriesDropdown"
+        android:layout_width="234dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="350dp"
+        android:background="@drawable/border"/>
+
+    <EditText
+        android:id="@+id/notesEntry"
+        android:layout_width="203dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginStart="26dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="445dp"
+        android:inputType="textMultiLine"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/submitButton"
+        style="@android:style/Widget.DeviceDefault.Button.Borderless"
+        android:layout_width="85dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="522dp"
+        android:layout_marginRight="333dp"
+        android:text="Submit"
+        android:textAllCaps="false"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/deleteButton"
+        style="@android:style/Widget.DeviceDefault.Button.Borderless"
+        android:layout_width="85dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="206dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="522dp"
+        android:layout_marginRight="333dp"
+        android:layout_marginBottom="500dp"
+        android:text="Delete"
+        android:textAllCaps="false"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/receiptDate"
+        style="@android:style/Widget.DeviceDefault.Button.Borderless"
+        android:layout_width="187dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="170dp"
+        android:ems="10"
+        android:gravity="start|center_vertical"
+        android:hint="@string/select_date"
+        android:paddingStart="1dip"
+        android:paddingLeft="1dip"
+        android:paddingRight="1dip"
+        android:textSize="16sp" />
+
+
+    <EditText
+        android:id="@+id/priceEntry"
+        android:layout_width="94dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="33dp"
+        android:layout_marginTop="267dp"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:id="@+id/storeNametextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="69dp"
+        android:text="Store Name"
+        android:textSize="16sp" />
+    <TextView
+        android:id="@+id/dolla"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="272dp"
+        android:text="$"
+        android:textSize="18sp" />
+
+
+</RelativeLayout>
